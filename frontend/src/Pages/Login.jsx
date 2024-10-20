@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import rimg from "../assets/react.svg";  // Your company logo
-import tickIcon from '../assets/tick-icon.svg';  // Your tick SVG (replace with actual path)
+import tickIcon from '../assets/tick-icon.svg';
+import leftimage from "../assets/log.jpg"  // Your tick SVG (replace with actual path)
+import { Link } from 'react-router-dom';
 
 function Login() {
     // State to track input value
@@ -11,9 +13,9 @@ function Login() {
             {/* Left Section with the Image */}
             <div className='w-1/3 relative'>
                 <img 
-                    src="https://via.placeholder.com/600x800"  // Replace this with the actual image source
+                    src={leftimage}  // Replace this with the actual image source
                     alt="Side Image" 
-                    className='object-cover w-full h-full'
+                    className='object-bottom w-full h-full rounded-lg'
                 />
             </div>
 
@@ -61,7 +63,7 @@ function Login() {
                     </div>
 
                     {/* Log In Button */}
-                    <button className="w-full bg-gray-500 text-white py-2 rounded-md mb-4">Log In</button>
+                    <Link to="/home"><button className="w-full bg-gray-500 text-white py-2 rounded-md mb-4">Log In</button></Link>
 
                     {/* Links */}
                     <div className='flex justify-between text-sm'>

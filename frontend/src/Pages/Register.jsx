@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import rimg from "../assets/react.svg";  // Your company logo
 import tickIcon from '../assets/tick-icon.svg';  // Your tick SVG (replace with actual path)
+import leftimage from "../assets/log.jpg"
 
 function Register() {
     // State to track input values
@@ -13,9 +14,9 @@ function Register() {
             {/* Left Section with the Image */}
             <div className='w-1/3 relative'>
                 <img 
-                    src="https://via.placeholder.com/600x800"  // Replace this with the actual image source
+                    src={leftimage} // Replace this with the actual image source
                     alt="Side Image" 
-                    className='object-cover w-full h-full'
+                    className='object-bottom w-full h-full'
                 />
             </div>
 
